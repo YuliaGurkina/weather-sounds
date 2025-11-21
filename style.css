@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("/fonts/roboto.ttf") format("ttf");
+}
+
+/* Теперь можно использовать шрифт */
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  background-size: cover;
+  margin: 0;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+}
+
+.main__header {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.list {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.list__item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.list__item--summer {
+  background-image: url("./assets/summer-bg.jpg");
+}
+
+.list__item--rain {
+  background-image: url("./assets/rain-bg.jpg");
+}
+
+.list__item--winter {
+  background-image: url("./assets/winter-bg.jpg");
+}
+
+.list__item img {
+  width: 40px;
+  height: 40px;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin-top: 20px;
+}
+
+audio {
+  display: none;
+}

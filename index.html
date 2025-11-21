@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Sounds</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__title">Weather sounds</h1>
+      </header>
+
+      <div id="buttons-container" class="list"></div>
+
+      <input
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.5"
+        id="volume-control"
+      />
+
+      <audio src="./assets/sounds/rain.mp3" id="rain-audio"></audio>
+      <audio src="./assets/sounds/summer.mp3" id="summer-audio"></audio>
+      <audio src="./assets/sounds/winter.mp3" id="winter-audio"></audio>
+    </main>
+  </body>
+</html>
